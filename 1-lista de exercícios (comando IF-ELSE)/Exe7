@@ -1,0 +1,18 @@
+#include <iostream>
+#include <locale.h>
+#define SENHA 997567466
+using namespace std;
+
+int passwd;
+
+int main(){
+	setlocale(LC_ALL, "");
+	cout << "Digite a senha para abrir o Cofre: ";
+	cin >> passwd;
+	
+	if (passwd == SENHA){
+		cout << "Acesso Permitido.";
+	}else{
+		cout << "Acesso Negado.";
+	}
+} 
